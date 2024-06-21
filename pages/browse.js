@@ -10,7 +10,7 @@ import {
   removeDuplicates,
 } from "../utils/arrays_utils";
 import Link from "next/link";
-import ProductCard from "@/components/productCard";
+import ProductCard from "../components/productCard";
 import CategoryFilter from "../components/browse/categoryFilter";
 import SizesFilter from "../components/browse/sizesFilter";
 import ColorsFilter from "../components/browse/colorsFilter";
