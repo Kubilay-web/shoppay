@@ -279,14 +279,14 @@ export async function getServerSideProps(context) {
   const order = await Order.findById(id)
     .populate({ path: "user", model: User })
     .lean();
-  let paypal_client_id = process.env.PAYPAL_CLIENT_ID;
-  let stripe_public_key = process.env.STRIPE_PUBLIC_KEY;
+  // let paypal_client_id = process.env.PAYPAL_CLIENT_ID;
+  // let stripe_public_key = process.env.STRIPE_PUBLIC_KEY;
   db.disconnectDb();
   return {
     props: {
       orderData: JSON.parse(JSON.stringify(order)),
-      paypal_client_id,
-      stripe_public_key,
+      // paypal_client_id,
+      // stripe_public_key,
     },
   };
 }

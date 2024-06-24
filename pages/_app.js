@@ -9,6 +9,7 @@ import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 let persistor = persistStore(store);
+
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <>
