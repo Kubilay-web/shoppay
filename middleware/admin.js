@@ -10,7 +10,7 @@ export default async (req, res, next) => {
   db.connectDb();
   let user = await User.findById(token.sub);
   db.disconnectDb();
-  if (user.role == "admin") {
+  if (user.role == "user") {
     next();
   } else {
     res.status(401).json({ message: "Access denied, Admin resourses." });

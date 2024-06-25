@@ -20,7 +20,7 @@ export default function dashboard({ users, orders, products }) {
         <title>Shoppay - Admin Dashboard</title>
       </Head>
       <Layout>
-        <div className={styles.header}>
+        {/* <div className={styles.header}>
           <div className={styles.header__search}>
             <label htmlFor="">
               <input type="text" placeholder="Search here..." />
@@ -30,8 +30,8 @@ export default function dashboard({ users, orders, products }) {
             <Dropdown userImage={session?.user?.image} />
             <Notifications />
           </div>
-        </div>
-        <div className={styles.cards}>
+        </div> */}
+        {/* <div className={styles.cards}>
           <div className={styles.card}>
             <div className={styles.card__icon}>
               <TbUsers />
@@ -75,8 +75,8 @@ export default function dashboard({ users, orders, products }) {
               <span>Total Earnings</span>
             </div>
           </div>
-        </div>
-        <div className={styles.data}>
+        </div> */}
+        {/* <div className={styles.data}>
           <div className={styles.orders}>
             <div className={styles.heading}>
               <h2>Recent Orders</h2>
@@ -156,7 +156,7 @@ export default function dashboard({ users, orders, products }) {
               </tbody>
             </table>
           </div>
-        </div>
+        </div> */}
       </Layout>
     </div>
   );
