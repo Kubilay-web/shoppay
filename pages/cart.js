@@ -18,6 +18,7 @@ export default function cart() {
   const { data: session } = useSession();
   const [selected, setSelected] = useState([]);
   const { cart } = useSelector((state) => ({ ...state }));
+  console.log(cart);
   const dispatch = useDispatch();
   //-----------------------
   const [shippingFee, setShippingFee] = useState(0);
