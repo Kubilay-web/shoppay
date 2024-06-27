@@ -8,10 +8,11 @@ import { useRouter } from "next/router";
 export default function Item({ item, visible, index }) {
   const [show, setShow] = useState(visible);
   const router = useRouter();
+
   return (
     <li>
       {item.heading == "Sign out" ? (
-        <b onClick={() => signOut()}>Sign out</b>
+        <b onClick={() => signOut({ callbackUrl: "/" })}>Sign out</b>
       ) : (
         <b onClick={() => setShow((prev) => !prev)}>
           {item.heading} {show ? <HiMinusSm /> : <HiPlusSm />}
