@@ -538,7 +538,7 @@ export async function getServerSideProps(ctx) {
       materials,
       paginationCount: Math.ceil(totalProducts / pageSize),
       country: {
-        name: "Morocco",
+        name: "Türkiye",
         flag: "https://cdn-icons-png.flaticon.com/512/197/197551.png?w=360",
       },
     },
